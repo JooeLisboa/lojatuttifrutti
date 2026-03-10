@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes softpulse {
+  0%,
+  100% {
+    box-shadow: 0 10px 28px rgba(255, 79, 157, 0.32);
+  }
+  50% {
+    box-shadow: 0 14px 34px rgba(255, 79, 157, 0.48);
+  }
+}
+
+.animate-softpulse {
+  animation: softpulse 2s ease-in-out infinite;
+}
